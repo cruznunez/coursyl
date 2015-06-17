@@ -34,3 +34,8 @@ function showLast() {
   last = sections[sections.length-1];
   last.style.display = "block"
 }
+
+function hideRow(index) {
+  var sections = document.getElementsByClassName("association");
+  sections[index].style.display = "none"
+}
