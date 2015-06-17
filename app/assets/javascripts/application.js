@@ -14,3 +14,23 @@
 //= require jquery_ujs
 //= require d3
 //= require_tree .
+
+
+function disableButton() {
+  var buttons = document.getElementsByClassName("btn");
+  buttons[6].disabled = true;
+  buttons[6].value = "Updated";
+  return true;
+}
+
+function hideLast() {
+  var sections = document.getElementsByClassName("association");
+  last = sections[sections.length-1];
+  last.style.display = "none"
+}
+
+function showLast() {
+  var sections = document.getElementsByClassName("association");
+  last = sections[sections.length-1];
+  last.style.display = "block"
+}
