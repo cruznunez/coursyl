@@ -36,7 +36,9 @@ function showLast() {
   last.style.display = "block"
 }
 
-function hideRow(index) {
+function hideAndDelete(index) {
   var sections = document.getElementsByClassName("association");
   sections[index].style.display = "none"
+  var records = document.getElementsByClassName("destroy")
+  records[index].checked = "true";
 }
