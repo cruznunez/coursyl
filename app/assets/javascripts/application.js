@@ -18,20 +18,21 @@
 
 function disableButton() {
   var buttons = document.getElementsByClassName("btn");
-  buttons[6].disabled = true;
-  buttons[6].value = "Updated";
+  button = buttons[6]
+  button.disabled = true;
+  button.value = "Updating...";
   return true;
 }
 
 function hideLast() {
   var sections = document.getElementsByClassName("association");
-  last = sections[sections.length-1];
+  var last = sections[sections.length-1];
   last.style.display = "none"
 }
 
 function showLast() {
   var sections = document.getElementsByClassName("association");
-  last = sections[sections.length-1];
+  var last = sections[sections.length-1];
   last.style.display = "block"
 }
 

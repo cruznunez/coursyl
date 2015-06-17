@@ -52,6 +52,6 @@
 
 
   <div class="actions">
-    <%= f.submit class: "btn", onclick: "disableButton()" %>
+    <%= f.submit class: "btn", onclick: "disableButton(), this.form.submit()" %>
   </div>
 <% end %>
